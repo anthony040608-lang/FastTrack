@@ -5,12 +5,17 @@
 package com.mycompany.fasttrack.Classes;
 
 /**
- *
- * @author antho
+ * Clase para darle valor a cada letra la cual se usa para generar el codigo hash para una busqueda mas eficiente
+ * @author Anthony Hurtado
+ * @version 14/11/2026
  */
 public class Valorletras {
-    
-public int letras(String letra){
+    /**
+     * Metodo para cambiarle el valor a las letras del codigo de la estacion
+     * @param letra un String el cual es una letra para darle un valor 
+     * @return un int con el valor de la letra 
+     */
+    public int letras(String letra){
         int valor = 0;
         switch (letra.toLowerCase()){
             case "a" -> valor = 1;
@@ -39,7 +44,7 @@ public int letras(String letra){
             case "x" -> valor = 24;
             case "y" -> valor = 25;
             case "z" -> valor = 26;
-            
+            default -> valor = 27;// en el caso de no ser una letra devuelve este valor 
         }
         return valor;
     }

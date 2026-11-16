@@ -4,30 +4,14 @@
 
 package com.mycompany.fasttrack;
 
-import com.mycompany.fasttrack.Classes.Hashtables;
-import com.mycompany.fasttrack.Classes.Estaciones;
-
 /**
- *
- * @author antho
+ *Clase main del proyecto la cial se encarga de iniciar la interfaz grafica
+ * @author Anthony Hurtado
+ * @version 14/11/2026
  */
 public class FastTrack {
 
     public static void main(String[] args) {
-        System.out.println("funciona");
-        Hashtables hashes = new Hashtables();
-        int indice = hashes.crearhash("lenico");
-        System.out.println(indice);
-       
- 
-        
-        
-        
-        
-        
-        
-        
-        
-        
+        new InterfazFastTrack().setVisible(true);//Comando para iniciar la interfaz 
     }
 }
